@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Engineering College Home Page</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo"><img src="./bitmesralogo.png" alt=""></a>
+
+      <nav class="navbar">
+          <ul>
+              <li><a href="#">HOME</a></li>
+              <li><a href="#">ABOUT US</a></li>
+              <li><a href="#">DEPARTMENT+</a>
+                <ul>
+                  <li><a href="#">CSE</a></li>
+                  <li><a href="#">ECE</a></li>
+                  <li><a href="#">EEE</a></li>
+                  <li><a href="#">MECH</a></li>
+                  <li><a href="#">BBA</a></li>
+                  <li><a href="#">BCA</a></li>
+                </ul>
+            
+            </li>
+              
+              <li><a href="#">FACULTY</a></li>
+              <li><a href="#">RESEARCH</a></li>
+              <li><a href="#">PLACEMENT</a></li>
+              <li><a href="#">CONTACT US</a></li>
+
+          </ul>
+      </nav>
+  </header>
+    <div class="home">
+      <div class="left" style="background-image: url('./bit2.jpg')"></div>
+      <div class="right">
+        <img class="bit" src="./bitright.png" />
+   
+        <h1 class="h">Birla Institute of Technology</h1>
+        <h2>Mesra, Ranchi - India</h2>
+        <div class="box">
+          <pre>
+Birla Institute of Technology Mesra is a deemed 
+university under Section 3 of the UGC Act in 
+Jharkhand, India.The institute was established 
+in 1955 by the leading industrialist and 
+philanthropist, BM Birla and was granted 
+autonomous status in 1972 under Section 30 of 
+UGC Act 1956. </pre
+          >
+        </div>
+
+        <div class="but">
+          <button class="btn">Login</button>
+          <button class="btn">Sign Up</button>
+        </div>
+
+        <br />
+        <div class="sc">
+          <div class="ic">
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/2504/2504923.png"
+            /></a>
+
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/1409/1409946.png"
+            /></a>
+
+            <a href="#"
+              ><img
+                src="https://cdn-icons-png.flaticon.com/512/2504/2504947.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <style>
+      
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    padding: 0px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+header .logo img{
+    width: 50px;
+}
+
+header .navbar ul{
+    list-style: none;
+
+}
+header .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+header .navbar ul li a{
+    font-size: 20px;
+    padding: 20px;
+    color: #000000;
+    display: block;
+
+}
+
+header .navbar ul li a:hover{
+    background: #ef3131;
+    color: #fff;
+}
+header .navbar ul li ul{
+    position: absolute;
+    right: 0;
+    
+    width: 100px;
+    
+    background: #fff;
+    display: none;
+}
+header .navbar ul li ul li{
+    width: 100%;
+    border-top: 1px solid rgba(0,0,0, 0.1);
+    height: 50px;
+}
+header .navbar ul li ul li ul{
+    left: 200px;
+    top: 0;
+    
+}
+header .navbar ul li:hover> ul{
+    display:initial;
+}
+
+
+.home{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 840px;
+    justify-content: center;
+    align-items: center;  
+    color: white;
+}
+.left{
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
+    margin-right: 400px;
+    margin-bottom: 100px;
+    
+    height: 740px;
+    background: no-repeat center center/cover;
+    
+}
+.left::before{
+    content :"";
+    position: absolute;
+    
+    height: 740px;
+    width: 100%;
+    background:rgb(216, 46, 53, 0.4)no-repeat center center/cover;
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 20px;
+    margin-bottom: 100px;
+    height: 740px;
+    background: white;
+    align-items :center;
+    position: absolute;
+    right: 0%;
+    color:black;
+     
+}
+.h{
+    color: red;
+}
+.bit{
+    width: 50%;
+    
+}
+.headings
+{
+    font-family: century;
+    font-size: 3rem;
+    text-align :center;
+    margin: 30px 0px;
+}
+.box{
+    display: flex;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    flex-direction: column;
+    color: rgb(2, 2, 2);
+    width: 350px; height: 450px;
+   
+    margin: 10px;
+    align-items: center;
+    text-align: justify;
+    padding: 10px;
+    background-size: 100% 200%;
+    
+    
+}
+.btn{
+ 
+    height:35px;
+    padding: 10px 20px;
+    background-color: red;
+    border: 1px solid rgb(7, 7, 7);
+    color: white;
+    outline: none;
+    transition: .6s ease;
+    margin: 10px 60px ;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color:black;
+    
+    font-weight: bold;
+}
+.sc{
+    display: flex;
+   margin: 20px;   
+}
+.ic{
+    width: 170px;
+    height: 80px;
+    display: flex;    
+}
+.ic img{
+    width: 35px;
+    margin-right: 40px;
+    
+    align-items: center;
+    justify-content: center;
+    padding:auto;     
+}
+.ic a:hover{
+    transition: transform 0.5s;
+    transform: translateY(-8px);
+}
+
+    </style>
+  </body>
+</html>
